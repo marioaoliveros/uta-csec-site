@@ -30,15 +30,6 @@ keystone.init({
 
 	'emails': 'templates/emails',
 
-	'auto update': true,
-	'mongo': process.env.MONGO_URI || 'mongodb://localhost/' + pkg.name,
-
-	'session': true,
-	'session store': 'mongo',
-	'auth': true,
-	'user model': 'User',
-	'cookie secret': process.env.COOKIE_SECRET || 'utacsec',
-
 	'mailgun api key': process.env.MAILGUN_API_KEY,
 	'mailgun domain': process.env.MAILGUN_DOMAIN,
 	// 'mandrill api key': process.env.MANDRILL_KEY,
